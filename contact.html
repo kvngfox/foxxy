@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registration</title>
+</head>
+<body>
+   <div id="requestForm">
+    <h2>quick support</h2>
+    <p>If your request is urgent please drop us a quick line and we'll respond to you within 24hours</p>
+ 
+    <form action="get">
+ 
+   <p>
+     <label for="" class="title">Name :</label>
+     <input type="text" name="name" id="name" value="Please type in your name" class="inputs">
+   </p>
+   <p>
+     <label for="" class="title"> Email : </label>
+     <input type="email" name="email" id="email" value="email" class="inputs">
+   </p>
+   <p>
+     <label for="" class="title"> Phone Number :</label>
+     <input type="number" name="phone number" id="number" value="number" class="inputs">
+   </p>
+   <p>
+     <label for="" class="title"> request : </label>
+     <textarea name="request" id="" cols="30" rows="10"></textarea>
+   </p>
+    <p class="buttons">
+      <button type="reset" class="reset">Reset</button>
+      <button type="submit"> Submit </button>
+    </p>
+    </form>
+   </div>
+   <script src="js/script2.js">
+      var nameField = document.getElementById("name");
+    
+    nameField.onfocus = function(){
+        if (nameField.value == "Please type in your name"){
+            nameField.value = "";
+        }
+    }; 
+    
+    nameField.onblur = function(){
+        if (nameField.value == ""){
+            nameField.value = "Please type in your name";
+        }
+    };
+   </script>
+</body>
+</html> 
